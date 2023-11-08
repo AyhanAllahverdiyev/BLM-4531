@@ -1,111 +1,101 @@
+# Adres Defteri .NET Projesi
 
-## Adres Defteri .NET Projesi
+Bu proje, temel bir adres defteri uygulamasının adım adım nasıl oluşturulacağını içeren bir rehber sunulmaktadır.
 
-Bu proje, temel bir adres defteri uygulaması oluşturmak için adım adım rehber sunmaktadır.
-
-### Başlangıç
- 
 ## İçindekiler
-- [Adres Defteri .NET Projesi](#adres-defteri-net-projesi)
-  - [Başlangıç](#başlangıç)
-    - [Proje Oluşturma](#1-proje-oluşturma)
-    - [Form Tasarımı](#2-form-tasarımı)
-  - [Veri Yapısı](#veri-yapısı)
-    - [İletişim Sınıfı](#3-iletşim-sınıfı)
-    - [Kişi Listesi](#4-kişi-listesi)
-  - [Temel İşlemler](#temel-işlemler)
-    - [Kişi Ekleme](#5-kişi-ekleme)
-    - [Kişileri Görüntüleme](#6-kişileri-görüntüleme)
-    - [Kişi Silme](#7-kişi-silme)
-    - [Kişi Düzenleme](#8-kişi-düzenleme)
-  - [Veri Saklama](#veri-saklama)
-    - [Veriyi Kaydetme](#9-veriyi-kaydetme)
-    - [Veriyi Yükleme](#10-veriyi-yükleme)
-  - [Ek Geliştirmeler](#ek-geliştirmeler)
-    - [Doğrulama](#11-doğrulama)
-    - [Formu Temizleme](#12-formu-temizleme)
-    - [Hata Ayıklama](#13-hata-ayıklama)
-  - [Test ve Dökümantasyon](#test-ve-dökümantasyon)
-    - [Uygulama Testi](#14-uygulama-testi)
-    - [Dökümantasyon](#15-dökümantasyon)
-    - [Kullanıcı Dostu Mesajlar](#16-kullanıcı-dostu-mesajlar)
-    - [Kod Yeniden Düzenleme](#17-kod-yeniden-düzenleme)
-    - [Geliştirmeler](#18-geliştirmeler)
-    - [Kapsamlı Testler](#19-kapsamlı-testler)
-  - [Sonuç](#sonuç)
+- [Başlangıç](#başlangıç)
+  - [Proje Oluşturuluyor](#proje-oluşturuluyor)
+  - [Form Tasarımı](#form-tasarımı)
+- [Veri Yapısı](#veri-yapısı)
+  - [İletişim Sınıfı](#iletisim-sınıfı)
+  - [Kişi Listesi](#kisi-listesi)
+- [Temel İşlemler](#temel-islemler)
+  - [Kişi Ekleniyor](#kisi-ekleniyor)
+  - [Kişiler Görüntüleniyor](#kisiler-goruntuleniyor)
+  - [Kişi Siliniyor](#kisi-siliniyor)
+- [Veri Saklama](#veri-saklama)
+  - [Veri Kaydediliyor](#veri-kaydediliyor)
+  - [Veri Yükleniyor](#veri-yukleniyor)
+- [Ek Geliştirmeler](#ek-gelistirmeler)
+  - [Doğrulama](#dogrulama)
+  - [Form Temizleniyor](#form-temizleniyor)
+  - [Hata Ayıklama](#hata-ayıklama)
+- [Test ve Dökümantasyon](#test-ve-dokumantasyon)
+  - [Uygulama Test Ediliyor](#uygulama-test-ediliyor)
+  - [Dökümantasyon](#dokumantasyon)
+  - [Kullanıcı Dostu Mesajlar](#kullanici-dostu-mesajlar)
+  - [Kod Yeniden Düzenleniyor](#kod-yeniden-duzenleniyor)
+  - [Geliştirmeler](#gelistirmeler)
+  - [Kapsamlı Testler](#kapsamli-testler)
+- [Sonuç](#sonuc)
 
-Haftaları göstermek için bu başlıkları kullanabilirsiniz. Her başlığın yanındaki bağlantılar, kullanıcıların belirli bir adıma hızlıca gitmelerini sağlayacaktır.
-1. **Proje Oluşturma**
-   - Visual Studio açın ve yeni bir Windows Forms Uygulaması projesi oluşturun.
+## Başlangıç
 
-2. **Form Tasarımı**
-   - Ana formu tasarlayın.
-   - Ad, telefon ve e-posta giriş alanları ekleyin.
-   - Ekleme, güncelleme, silme ve kişileri görüntüleme düğmelerini ekleyin.
+### Proje Oluşturuluyor
+- Visual Studio kullanılarak yeni bir Windows Forms Uygulaması projesi oluşturuluyor.
 
-### Veri Yapısı
+### Form Tasarımı
+- Ana form, ad, telefon ve e-posta giriş alanları ile tasarlanıyor.
+- Ekleme, güncelleme, silme ve kişileri görüntüleme düğmeleri ekleniyor.
 
-3. **İletişim Sınıfı**
-   - İletişimi temsil etmek için yeni bir sınıf oluşturun.
-   - Bu sınıfta ad, telefon ve e-posta gibi özellikleri tanımlayın.
+## Veri Yapısı
 
-4. **Kişi Listesi**
-   - Formun kodunda, kişileri saklamak için bir `List<Contact>` oluşturun.
+### İletişim Sınıfı
+- İletişimi temsil etmek için yeni bir sınıf oluşturuluyor.
+- Bu sınıf, ad, telefon ve e-posta gibi özellikleri içeriyor.
 
-### Temel İşlemler
+### Kişi Listesi
+- Formun kodunda, kişileri saklamak için bir `List<Contact>` oluşturuluyor.
 
-5. **Kişi Ekleme**
-   - "Ekle" düğmesi için kodu uygulayın.
-   - Yeni bir İletişim nesnesi oluşturun ve listeye ekleyin.
+## Temel İşlemler
 
-6. **Kişileri Görüntüleme**
-   - "Kişileri Görüntüle" düğmesini uygulayarak kişileri bir liste veya tablo ile görüntüleyin.
+### Kişi Ekleniyor
+- "Ekle" düğmesi için kod uygulanıyor.
+- Yeni bir İletişim nesnesi oluşturuluyor ve liste ekleniyor.
 
-7. **Kişi Silme**
-   - "Sil" düğmesini uygulayarak seçilen kişiyi listeden kaldırın.
+### Kişiler Görüntüleniyor
+- "Kişileri Görüntüle" düğmesi için kod uygulanıyor ve kişiler bir liste veya tablo ile gösteriliyor.
 
-8. **Kişi Düzenleme**
-   - "Güncelle" düğmesini uygulayarak kullanıcıların iletişim ayrıntılarını değiştirmesine izin verin.
+### Kişi Siliniyor
+- "Sil" düğmesi için kod uygulanıyor ve seçilen kişi listeden kaldırılıyor.
+- 
+## Veri Saklama
 
-### Veri Saklama
+### Veri Kaydediliyor
+- Program kapatıldığında iletişim listesi bir metin dosyasına kaydediliyor.
 
-9. **Veriyi Kaydetme**
-   - Program kapatıldığında iletişim listesini bir metin dosyasına kaydetme işlemini uygulayın.
+### Veri Yükleniyor
+- Program başladığında iletişim verileri metin dosyasından yükleniyor.
 
-10. **Veriyi Yükleme**
-    - Program başladığında iletişim verilerini metin dosyasından yüklemeyi uygulayın.
+## Ek Geliştirmeler
 
-### Ek Geliştirmeler
+### Doğrulama
+- Kullanıcıların geçerli veri girdiğinden emin olmak için temel giriş doğrulaması ekleniyor.
 
-11. **Doğrulama**
-    - Kullanıcıların geçerli veri girdiğinden emin olmak için temel giriş doğrulaması ekleyin.
+### Form Temizleniyor
+- "Temizle" düğmesi eklenerek giriş alanları sıfırlanıyor.
 
-12. **Formu Temizleme**
-    - "Temizle" düğmesini ekleyerek giriş alanlarını sıfırlamak için kod ekleyin.
+### Hata Ayıklama
+- Dosya yükleme sorunları veya geçersiz veri gibi hatalar nazikçe ele alınıyor.
 
-13. **Hata Ayıklama**
-    - Dosya yükleme sorunları veya geçersiz veri gibi hataları nazikçe ele alın.
+## Test ve Dökümantasyon
 
-### Test ve Dökümantasyon
+### Uygulama Test Ediliyor
+- Uygulama, örnek veri ile test ediliyor ve doğru çalıştığından emin olunuyor.
 
-14. **Uygulama Testi**
-    - Uygulamanızı örnek veri ile test edin ve doğru çalıştığından emin olun.
+### Dökümantasyon
+- Kodun daha iyi anlaşılabilmesi için yorumlar ekleniyor.
+ 
 
-15. **Dökümantasyon**
-    - Kodunuzu daha iyi anlaşılabilir hale getirmek için yorumlar ekleyin.
+### Kod Yeniden Düzenleniyor
+- Kod temizleniyor ve optimize ediliyor.
 
-16. **Kullanıcı Dostu Mesajlar**
-    - Kullanıcı dostu mesajlar görüntüleyin, başarıları ve hataları bildirin.
+### Geliştirmeler
+- Kullanıcı deneyimini artırmak için arama veya sıralama gibi ek özellikler ekleniyor.
 
-17. **Kod Yeniden Düzenleme**
-    - Kodunuzu temizlemek ve optimize etmek için gerektiğinde yeniden düzenleme yapın.
+### Kapsamlı Testler
+- Uygulama, çeşitli senaryolarla test ediliyor ve hatalar tespit ediliyor.
 
-18. **Geliştirmeler**
-    - Arama veya sıralama gibi ek özellikler ekleyin, kullanıcı deneyimini artırın.
+## Sonuç
 
-19. **Kapsamlı Testler**
-    - Uygulamanızı çeşitli senaryolarla test ederek hataları tespit edin.
-
-### Sonuç
-
-Bu adımlar, .NET'te temel bir adres defteri projesi oluşturmak için ihtiyacınız olan temel adımları içermektedir. Bu projeyi oluşturarak .NET becerilerinizi geliştirebilir ve daha karmaşık projelere adım atabilirsiniz.
+Bu adımlar, .NET'te temel bir adres defteri projesi oluşturmak için gereken temel temelleri kapsamaktadır. Bu projeyi oluşturarak .NET becerilerinizi geliştirebilir ve daha karmaşık projelere adım atabilirsiniz.
