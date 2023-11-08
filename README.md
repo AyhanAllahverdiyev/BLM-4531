@@ -98,4 +98,4 @@ Bu proje, temel bir adres defteri uygulamasının adım adım nasıl oluşturula
 
 ## Sonuç
 
-Bu adımlar, .NET'te temel bir adres defteri projesi oluşturmak için gereken temel temelleri kapsamaktadır. Bu projeyi oluşturarak .NET becerilerinizi geliştirebilir ve daha karmaşık projelere adım atabilirsiniz.
+Bu adımlar, .NET'te temel bir adres defteri projesi oluşturmak için gereken temel temelleri kapsamaktadır.
